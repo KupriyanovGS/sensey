@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="text.css">
+        <style>
+            .rollover{
+                background: url(img/сенсей1.png);
+                display: block;
+                width: 450px;
+                height: 342px;
+            }
+            .rollover:hover{
+                background: url(img/сенсей2.png);
+
+            }
+            img{padding-left: 15em;}
+            h1{padding-left: 9em;}
+
+            
+        </style>
+    </head>
+
+    <body>
+        <ul class="href">
+            <li><a href="billy.html">Б.В.Харченко</a></li>
+        </ul>
+        <div class="outline">
+            <h1>ВЫЖИВАЛОВО</h1>
+            <img src="img/ГРИБ.png" alt="мастер Сенсей"/>
+            <p>Великий мастер Сенсей, ведущий ютуб-канала ВЫЖИВАЛОВО, ролики которого обязан посмотреть
+            каждый. Мало кто знает, что на фото выше, Сенсей держит молот,который был отнят у опытного
+            медведя в 94 году в лесах Сибири. Косолапый с помощью молота умело маскировался под 
+            лесоруба и при случае нападал на людей. К счастью ему на пути попался мастер, и в ходе  
+            недолгого боя медведю снесли кабину. Теперь Сенсей носит молот с собой чтобы каждый зверь
+            в округе знал с кем имеет дело.</p>
+            <img id="image" src="img/ХЛЫСТ.png" alt="ХЛЫСТ" onclick="imgsrc(this)">
+            <p class="orange">(кликай на картинку выше)</p>
+            <!-- <img class='row' src="img/ШКУКОВЕРТ.png" alt="ШКУКОВЕРТ"> -->
+            <p>В арсенале мастера есть еще много советов по выживанию и приспособлений. Хлыст является
+            одним из таких и предназначен для эффективной борьбы с волками</p>
+            <p><a href="#" class="rollover"></a></p>
+            <p>А сейчас о самом главном. Сенсей часто жалеет своих жертв, не подпуская их к себе. Но в
+            равном сражении мастер задействует свое главное оружие - пилу-струну.</p>
+            <script>
+                let i=0;
+                let image=document.getElementById('image')
+                let imgs=new Array('img/ХЛЫСТ.png', 'img/ШКУКОВЕРТ.png', 'img/ВЫСТРЕЛ.png')
+                function imgsrc(image){
+                    i++;i%=imgs.length;
+                    image.src = imgs[i];
+                }
+            </script>
+            <!-- <script>
+                let i2=0;
+                let gif=document.getElementById('gif')
+                let imgs2=new Array('img/сенсей1.png', 'img/сенсей2.png', 'img/сенсей3.png')
+                while(true){
+                    setInterval(imgsrc2, 1000)
+                }
+                function imgsrc2(gif){
+                    i2++;i2%=imgs.length;
+                    gif.src = imgs2[i2];
+                    
+                   }  -->
+                
+                
+            
+            </script>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,35 @@
+*{background-color: black;
+    padding-left: 8em;
+  }
+  p{color: bisque;
+    width: 650px;
+    text-indent: 20px;
+  }
+  .orange{
+    color:bisque
+  }
+  .orange:hover{
+    color: orange
+  }
+  h1{color: bisque; 
+     font-size: 30;
+  }
+  img{
+    padding-left: 19em;
+    border-radius: 8px;
+    
+  }
+  .href{
+      position: absolute;
+      top: 5em;
+      left: -20em;
+      width: 9em;
+  }
+  .outline{
+      border: 2px solid bisque;
+      padding: 5px;
+      margin-left: 30px;
+      margin-right: 400px;
+      overflow: -moz-hidden-unscrollable;     
+  } 
+   
